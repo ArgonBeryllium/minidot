@@ -7,8 +7,8 @@
 		" buffers
 			noremap <A-a> :badd 
 			noremap <silent> <A-w> :bd<CR>
-			noremap <silent> <A-h> :BufferPrevious<CR>
-			noremap <silent> <A-l> :BufferNext<CR>
+			noremap <silent> <A-h> :bp<CR>
+			noremap <silent> <A-l> :bn<CR>
 		else
 		" alt line relocation
 			noremap <ESC>k ddkP
@@ -46,7 +46,7 @@
 	" appearance
 	set wrap linebreak
 	set number relativenumber
-	set list listchars=tab:→\ ,trail:·
+	set list listchars=tab:-->,trail:·
 	" searching
 	set ignorecase smartcase
 	set incsearch
